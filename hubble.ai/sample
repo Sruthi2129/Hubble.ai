@@ -1,0 +1,63 @@
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+  margin-bottom: 30px;
+}
+
+.header .logo {
+  width: 70px;
+  height: 70px;
+  margin-right:1380px;
+  margin-bottom:40px;
+}
+/* Center: Hubble logo + text */
+.hubble-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+/* Hubble “H” icon */
+.hubble-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Neon Bubble Text */
+.hubble-logo-text h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00A6FF 0%, #00F5C0 50%, #00FF88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8))
+          drop-shadow(0 0 15px rgba(0, 255, 150, 0.6));
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4))
+            drop-shadow(0 0 15px rgba(0, 255, 150, 0.4));
+  }
+
+}
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #40d0ff;
+  letter-spacing: 2px;
+  margin-right:600px;
+
+}
